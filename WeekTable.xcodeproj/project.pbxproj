@@ -8,11 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		636806C81ADFE50800E0411A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636806C71ADFE50800E0411A /* AppDelegate.swift */; };
-		636806CA1ADFE50800E0411A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636806C91ADFE50800E0411A /* ViewController.swift */; };
 		636806CD1ADFE50800E0411A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 636806CB1ADFE50800E0411A /* Main.storyboard */; };
 		636806CF1ADFE50800E0411A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 636806CE1ADFE50800E0411A /* Images.xcassets */; };
 		636806D21ADFE50800E0411A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 636806D01ADFE50800E0411A /* LaunchScreen.xib */; };
 		636806DE1ADFE50800E0411A /* WeekTableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636806DD1ADFE50800E0411A /* WeekTableTests.swift */; };
+		636806E81ADFE52C00E0411A /* TimeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636806E71ADFE52C00E0411A /* TimeTableViewController.swift */; };
+		63DE5A591AE22B1C004350DB /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 63DE5A581AE22B1C004350DB /* back.png */; };
+		63DE5A5B1AE22CF8004350DB /* back2.png in Resources */ = {isa = PBXBuildFile; fileRef = 63DE5A5A1AE22CF7004350DB /* back2.png */; };
+		63DE5A5D1AE257F0004350DB /* WeekTimeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DE5A5C1AE257F0004350DB /* WeekTimeTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +32,16 @@
 		636806C21ADFE50800E0411A /* WeekTable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeekTable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		636806C61ADFE50800E0411A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		636806C71ADFE50800E0411A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		636806C91ADFE50800E0411A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		636806CC1ADFE50800E0411A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		636806CE1ADFE50800E0411A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		636806D11ADFE50800E0411A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		636806D71ADFE50800E0411A /* WeekTableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeekTableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		636806DC1ADFE50800E0411A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		636806DD1ADFE50800E0411A /* WeekTableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekTableTests.swift; sourceTree = "<group>"; };
+		636806E71ADFE52C00E0411A /* TimeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeTableViewController.swift; sourceTree = "<group>"; };
+		63DE5A581AE22B1C004350DB /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
+		63DE5A5A1AE22CF7004350DB /* back2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back2.png; sourceTree = "<group>"; };
+		63DE5A5C1AE257F0004350DB /* WeekTimeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeekTimeTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +68,8 @@
 				636806C41ADFE50800E0411A /* WeekTable */,
 				636806DA1ADFE50800E0411A /* WeekTableTests */,
 				636806C31ADFE50800E0411A /* Products */,
+				63DE5A581AE22B1C004350DB /* back.png */,
+				63DE5A5A1AE22CF7004350DB /* back2.png */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,8 +86,9 @@
 			isa = PBXGroup;
 			children = (
 				636806C71ADFE50800E0411A /* AppDelegate.swift */,
-				636806C91ADFE50800E0411A /* ViewController.swift */,
 				636806CB1ADFE50800E0411A /* Main.storyboard */,
+				636806E71ADFE52C00E0411A /* TimeTableViewController.swift */,
+				63DE5A5C1AE257F0004350DB /* WeekTimeTableViewController.swift */,
 				636806CE1ADFE50800E0411A /* Images.xcassets */,
 				636806D01ADFE50800E0411A /* LaunchScreen.xib */,
 				636806C51ADFE50800E0411A /* Supporting Files */,
@@ -192,9 +201,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63DE5A591AE22B1C004350DB /* back.png in Resources */,
 				636806CD1ADFE50800E0411A /* Main.storyboard in Resources */,
 				636806D21ADFE50800E0411A /* LaunchScreen.xib in Resources */,
 				636806CF1ADFE50800E0411A /* Images.xcassets in Resources */,
+				63DE5A5B1AE22CF8004350DB /* back2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,8 +223,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				636806CA1ADFE50800E0411A /* ViewController.swift in Sources */,
 				636806C81ADFE50800E0411A /* AppDelegate.swift in Sources */,
+				63DE5A5D1AE257F0004350DB /* WeekTimeTableViewController.swift in Sources */,
+				636806E81ADFE52C00E0411A /* TimeTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +421,7 @@
 				636806E31ADFE50800E0411A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		636806E41ADFE50800E0411A /* Build configuration list for PBXNativeTarget "WeekTableTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +430,7 @@
 				636806E61ADFE50800E0411A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
