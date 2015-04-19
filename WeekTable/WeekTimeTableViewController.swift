@@ -33,12 +33,18 @@ class WeekTimeTableViewController: UIViewController {
     
     // course counts?
     var courseCount: Int! = 9
+    var courseViewWidth: CGFloat!
+    var courseViewHeight: CGFloat!
+    var courseViewBound: CGRect!
     
     // color region
     var headerBarColor: UIColor = UIColor(red: 0.2, green: 0.2, blue: 0.2, alpha: 0.7)
     var headerBarCellColor: UIColor = UIColor(red: 0.1, green: 0.1, blue: 0.1, alpha: 0.7)
     var sideBarColor: UIColor = UIColor(red: 0.5, green: 0.5, blue: 0.5, alpha: 0.7)
     var sideBarCellColor: UIColor = UIColor(red: 1.0, green: 1.0, blue: 0.3, alpha: 0.7)
+    var girdLineViewColor: UIColor = UIColor(red: 0.9, green: 0.9, blue: 0.9, alpha: 0.4)
+    var gridLineColor: UIColor = UIColor(red: 0.1, green: 0.1, blue: 0.1, alpha: 0.7)
+    var courseViewColor: UIColor = UIColor(red: 0.0, green: 0.5, blue: 0.9, alpha: 0.7)
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -63,9 +69,25 @@ class WeekTimeTableViewController: UIViewController {
         self.sideBarCellHeight = self.sideBarHeight/CGFloat(self.courseCount)
         self.sideBarCellWidth = self.sideBarWidth
         
+        // grid view height and width
+        self.gridTimeTableWidth = self.screenWidth - self.sideBarWidth
+        self.gridTimeTableHeight = self.sideBarHeight
+        self.gridLineWidth = 0.5
+        
+        // course region
+        self.courseViewBound = CGRect(x: 0.0, y: 0.0, width: self.headerBarCellWidth, height: self.sideBarCellHeight)
+        self.courseViewWidth = self.headerBarCellWidth - 5
+        self.courseViewHeight = self.sideBarCellHeight - 5
+        
+        //back image hee
+        var backimg = UIImageView(frame: CGRectMake(0.0, 0.0, self.screenWidth, self.screenHeight))
+        backimg.image = UIImage(named: "back2.png")
+        self.view.addSubview(backimg)
+        
         // adding views to user
         self.view.addSubview(self.HeaderBarView())
         self.view.addSubview(self.SideBarView())
+        self.view.addSubview(self.GridLineView())
     }
     
     
@@ -75,8 +97,9 @@ class WeekTimeTableViewController: UIViewController {
         view.backgroundColor = self.headerBarColor
         
         for day in 0...4 {
-            var dayView = UILabel(frame: CGRectMake(0.0, 0.0, self.headerBarCellWidth, self.headerBarCellHeight))
+            var dayView = UILabel(frame: CGRectMake(0.0, 0.0, self.headerBarCellWidth*0.7, self.headerBarCellHeight))
             dayView.text = "\(day+1)"
+            dayView.textColor = UIColor.whiteColor()
             dayView.backgroundColor = self.headerBarCellColor
             dayView.textAlignment = NSTextAlignment.Center
             dayView.layer.cornerRadius = self.headerBarCellHeight/2
@@ -86,7 +109,7 @@ class WeekTimeTableViewController: UIViewController {
             
             // position of x in every day
             var x = self.sideBarWidth + CGFloat(day)*self.headerBarCellWidth + self.headerBarCellWidth/2
-            dayView.center = CGPointMake(x, self.headerBarHeight/2)
+            dayView.center = CGPointMake(x, self.headerBarHeight/2+10)
             
             view.addSubview(dayView)
         }
@@ -102,7 +125,7 @@ class WeekTimeTableViewController: UIViewController {
         // classes in moring NTU got 0 at the very first class
         // fuck cannot use class so i use session here
         for session in 0...(self.courseCount - 1) {
-            var sessionLabel = UILabel(frame: CGRectMake(0.0, 0.0, self.sideBarCellWidth, self.sideBarCellHeight))
+            var sessionLabel = UILabel(frame: CGRectMake(0.0, 0.0, self.sideBarCellWidth, self.sideBarCellWidth))
             sessionLabel.text = "\(session)"
             sessionLabel.backgroundColor = self.sideBarCellColor
             sessionLabel.textAlignment = NSTextAlignment.Center
@@ -116,6 +139,56 @@ class WeekTimeTableViewController: UIViewController {
             
             view.addSubview(sessionLabel)
         }
+        
+        return view as UIView
+    }
+    
+    func GridLineView() -> UIView {
+        
+        var view = UIView(frame: CGRectMake(self.sideBarWidth, self.headerBarHeight, self.gridTimeTableWidth, self.gridTimeTableHeight))
+        view.backgroundColor = self.girdLineViewColor
+        
+        for day in 1...4 {
+            var line = UIView(frame: CGRectMake(0.0, 0.0, self.gridLineWidth, self.gridTimeTableHeight))
+            line.backgroundColor = self.gridLineColor
+            line.center.x = CGFloat(day)*self.headerBarCellWidth
+            
+            view.addSubview(line)
+        }
+        
+        for sessionLine in 1...self.courseCount {
+            var line = UIView(frame: CGRectMake(0.0, 0.0, self.gridTimeTableWidth, self.gridLineWidth))
+            line.backgroundColor = self.gridLineColor
+            line.center.y = CGFloat(sessionLine)*self.sideBarCellHeight
+            
+            view.addSubview(line)
+        }
+        
+        view.addSubview(self.addCourseView(1, session: 0))
+        for i in 0...8 {
+            var day = Int(arc4random()%5) + 1
+            var session = Int(arc4random()%8)
+            view.addSubview(self.addCourseView(day, session: session))
+        }
+        
+        return view as UIView
+    }
+    
+    func addCourseView(day: Int, session: Int, Title: NSString) -> UIView {
+        var view = UIView(frame: CGRectMake(0.0, 0.0, 10, 10))
+        
+        return view as UIView
+    }
+    
+    func addCourseView(day: Int, session: Int) -> UIView {
+        var view = UIView(frame: CGRectMake(0.0, 0.0, self.courseViewWidth, self.courseViewHeight))
+        view.backgroundColor = self.courseViewColor
+        view.layer.cornerRadius = 10
+        
+        var x = CGFloat(day)*self.courseViewBound.width - self.courseViewBound.width/2
+        var y = CGFloat(session)*self.courseViewBound.height + self.courseViewBound.height/2
+        view.center = CGPointMake(x, y)
+        
         
         return view as UIView
     }
