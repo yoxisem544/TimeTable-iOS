@@ -13,6 +13,7 @@
 		636806D21ADFE50800E0411A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 636806D01ADFE50800E0411A /* LaunchScreen.xib */; };
 		636806DE1ADFE50800E0411A /* WeekTableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636806DD1ADFE50800E0411A /* WeekTableTests.swift */; };
 		636806E81ADFE52C00E0411A /* TimeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636806E71ADFE52C00E0411A /* TimeTableViewController.swift */; };
+		63C1BD221AE4D61D00D91C04 /* ModalAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C1BD211AE4D61D00D91C04 /* ModalAnimationViewController.swift */; };
 		63DE5A591AE22B1C004350DB /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 63DE5A581AE22B1C004350DB /* back.png */; };
 		63DE5A5B1AE22CF8004350DB /* back2.png in Resources */ = {isa = PBXBuildFile; fileRef = 63DE5A5A1AE22CF7004350DB /* back2.png */; };
 		63DE5A5D1AE257F0004350DB /* WeekTimeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DE5A5C1AE257F0004350DB /* WeekTimeTableViewController.swift */; };
@@ -39,6 +40,7 @@
 		636806DC1ADFE50800E0411A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		636806DD1ADFE50800E0411A /* WeekTableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekTableTests.swift; sourceTree = "<group>"; };
 		636806E71ADFE52C00E0411A /* TimeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeTableViewController.swift; sourceTree = "<group>"; };
+		63C1BD211AE4D61D00D91C04 /* ModalAnimationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalAnimationViewController.swift; sourceTree = "<group>"; };
 		63DE5A581AE22B1C004350DB /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
 		63DE5A5A1AE22CF7004350DB /* back2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back2.png; sourceTree = "<group>"; };
 		63DE5A5C1AE257F0004350DB /* WeekTimeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeekTimeTableViewController.swift; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 			children = (
 				636806C71ADFE50800E0411A /* AppDelegate.swift */,
 				636806CB1ADFE50800E0411A /* Main.storyboard */,
+				63C1BD211AE4D61D00D91C04 /* ModalAnimationViewController.swift */,
 				636806E71ADFE52C00E0411A /* TimeTableViewController.swift */,
 				63DE5A5C1AE257F0004350DB /* WeekTimeTableViewController.swift */,
 				636806CE1ADFE50800E0411A /* Images.xcassets */,
@@ -225,6 +228,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				636806C81ADFE50800E0411A /* AppDelegate.swift in Sources */,
+				63C1BD221AE4D61D00D91C04 /* ModalAnimationViewController.swift in Sources */,
 				63DE5A5D1AE257F0004350DB /* WeekTimeTableViewController.swift in Sources */,
 				636806E81ADFE52C00E0411A /* TimeTableViewController.swift in Sources */,
 			);

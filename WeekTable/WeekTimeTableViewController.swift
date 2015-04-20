@@ -36,6 +36,7 @@ class WeekTimeTableViewController: UIViewController {
     var courseViewWidth: CGFloat!
     var courseViewHeight: CGFloat!
     var courseViewBound: CGRect!
+    var courses: NSMutableArray!
     
     // color region
     var headerBarColor: UIColor = UIColor(red: 0.2, green: 0.2, blue: 0.2, alpha: 0.7)
@@ -83,6 +84,9 @@ class WeekTimeTableViewController: UIViewController {
         var backimg = UIImageView(frame: CGRectMake(0.0, 0.0, self.screenWidth, self.screenHeight))
         backimg.image = UIImage(named: "back2.png")
         self.view.addSubview(backimg)
+        
+        // init courses to save course and pointer
+        courses = NSMutableArray()
         
         // adding views to user
         self.view.addSubview(self.HeaderBarView())
@@ -185,12 +189,35 @@ class WeekTimeTableViewController: UIViewController {
         view.backgroundColor = self.courseViewColor
         view.layer.cornerRadius = 10
         
-        var x = CGFloat(day)*self.courseViewBound.width - self.courseViewBound.width/2
-        var y = CGFloat(session)*self.courseViewBound.height + self.courseViewBound.height/2
+        var x = CGFloat(day)*self.courseViewBound.width - self.courseViewBound.width/2-0.5
+        var y = CGFloat(session)*self.courseViewBound.height + self.courseViewBound.height/2+0.5
+        
         view.center = CGPointMake(x, y)
         
+        var button = UIButton(frame: CGRectMake(0.0, 0.0, self.courseViewWidth, self.courseViewHeight))
+        button.setTitle("\(day) and \(session)", forState: UIControlState.Normal)
+        button.addTarget(self, action: "didTapOnCourse:", forControlEvents: UIControlEvents.TouchUpInside)
+        
+        view.addSubview(button)
+        
+        // saving courses to a array
+        // must send button itself or it can't get the right view
+        self.courses.addObject([day, session, button])
         
         return view as UIView
+    }
+    
+    func didTapOnCourse(sender: AnyObject) {
+//        println(sender)
+        
+        for name in self.courses {
+            if name[2].isEqual(sender) {
+                println(name)
+                println("\(name[0]) and \(name[1])")
+                performSegueWithIdentifier("showCourseDetail", sender: self)
+                break
+            }
+        }
     }
 
     override func didReceiveMemoryWarning() {

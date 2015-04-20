@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>C500E4C5-D962-433A-82FB-BEC5EF098435</string>
+	<key>IDESourceControlProjectName</key>
+	<string>project</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>15565B850718E763268B338ADF97DCB7B99ADA6E</key>
+		<string>https://github.com/yoxisem544/TimeTable-iOS.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>WeekTable.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>15565B850718E763268B338ADF97DCB7B99ADA6E</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/yoxisem544/TimeTable-iOS.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>15565B850718E763268B338ADF97DCB7B99ADA6E</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>15565B850718E763268B338ADF97DCB7B99ADA6E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>WeekTable</string>
+		</dict>
+	</array>
+</dict>
+</plist>
