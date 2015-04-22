@@ -60,7 +60,6 @@ class WeekTimeTableViewController: UIViewController {
         self.screenHeight = self.view.frame.height
         self.screenWidth = self.view.frame.width
 
-        
         // header bar setup
         self.headerBarHeight = 64.0
         self.headerBarWidth = self.screenWidth
@@ -68,11 +67,9 @@ class WeekTimeTableViewController: UIViewController {
         // content container setup
         self.contentContainerViewHeight = self.screenHeight - self.headerBarHeight
         self.contentContainerViewWidth = self.headerBarWidth
-
         
         // side bar setup
         self.sideBarWidth = 40.0
-
         
         // setup header cell item
         self.headerBarCellHeight = 30.0
