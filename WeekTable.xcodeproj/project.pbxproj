@@ -14,6 +14,14 @@
 		636806DE1ADFE50800E0411A /* WeekTableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636806DD1ADFE50800E0411A /* WeekTableTests.swift */; };
 		636806E81ADFE52C00E0411A /* TimeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636806E71ADFE52C00E0411A /* TimeTableViewController.swift */; };
 		63C1BD221AE4D61D00D91C04 /* ModalAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C1BD211AE4D61D00D91C04 /* ModalAnimationViewController.swift */; };
+		63C1BD241AE6288600D91C04 /* KeychainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C1BD231AE6288600D91C04 /* KeychainViewController.swift */; };
+		63C1BD261AE6290100D91C04 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63C1BD251AE6290100D91C04 /* Security.framework */; };
+		63C1BD2C1AE62B5A00D91C04 /* KeychainAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C1BD2B1AE62B5A00D91C04 /* KeychainAccess.swift */; };
+		63D306D21AE63AFB00FC90AD /* TabBarIconTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D306D11AE63AFB00FC90AD /* TabBarIconTest.swift */; };
+		63D306D51AE7446300FC90AD /* not-select.png in Resources */ = {isa = PBXBuildFile; fileRef = 63D306D31AE7446300FC90AD /* not-select.png */; };
+		63D306D61AE7446300FC90AD /* select.png in Resources */ = {isa = PBXBuildFile; fileRef = 63D306D41AE7446300FC90AD /* select.png */; };
+		63D306D91AE744DF00FC90AD /* ns.png in Resources */ = {isa = PBXBuildFile; fileRef = 63D306D71AE744DF00FC90AD /* ns.png */; };
+		63D306DA1AE744DF00FC90AD /* s.png in Resources */ = {isa = PBXBuildFile; fileRef = 63D306D81AE744DF00FC90AD /* s.png */; };
 		63DE5A591AE22B1C004350DB /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 63DE5A581AE22B1C004350DB /* back.png */; };
 		63DE5A5B1AE22CF8004350DB /* back2.png in Resources */ = {isa = PBXBuildFile; fileRef = 63DE5A5A1AE22CF7004350DB /* back2.png */; };
 		63DE5A5D1AE257F0004350DB /* WeekTimeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DE5A5C1AE257F0004350DB /* WeekTimeTableViewController.swift */; };
@@ -41,6 +49,14 @@
 		636806DD1ADFE50800E0411A /* WeekTableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekTableTests.swift; sourceTree = "<group>"; };
 		636806E71ADFE52C00E0411A /* TimeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeTableViewController.swift; sourceTree = "<group>"; };
 		63C1BD211AE4D61D00D91C04 /* ModalAnimationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalAnimationViewController.swift; sourceTree = "<group>"; };
+		63C1BD231AE6288600D91C04 /* KeychainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainViewController.swift; sourceTree = "<group>"; };
+		63C1BD251AE6290100D91C04 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		63C1BD2B1AE62B5A00D91C04 /* KeychainAccess.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainAccess.swift; sourceTree = "<group>"; };
+		63D306D11AE63AFB00FC90AD /* TabBarIconTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarIconTest.swift; sourceTree = "<group>"; };
+		63D306D31AE7446300FC90AD /* not-select.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "not-select.png"; sourceTree = "<group>"; };
+		63D306D41AE7446300FC90AD /* select.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = select.png; sourceTree = "<group>"; };
+		63D306D71AE744DF00FC90AD /* ns.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ns.png; sourceTree = "<group>"; };
+		63D306D81AE744DF00FC90AD /* s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = s.png; sourceTree = "<group>"; };
 		63DE5A581AE22B1C004350DB /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
 		63DE5A5A1AE22CF7004350DB /* back2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back2.png; sourceTree = "<group>"; };
 		63DE5A5C1AE257F0004350DB /* WeekTimeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeekTimeTableViewController.swift; sourceTree = "<group>"; };
@@ -51,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63C1BD261AE6290100D91C04 /* Security.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,11 +84,17 @@
 		636806B91ADFE50800E0411A = {
 			isa = PBXGroup;
 			children = (
+				63C1BD2B1AE62B5A00D91C04 /* KeychainAccess.swift */,
+				63C1BD251AE6290100D91C04 /* Security.framework */,
 				636806C41ADFE50800E0411A /* WeekTable */,
 				636806DA1ADFE50800E0411A /* WeekTableTests */,
 				636806C31ADFE50800E0411A /* Products */,
 				63DE5A581AE22B1C004350DB /* back.png */,
 				63DE5A5A1AE22CF7004350DB /* back2.png */,
+				63D306D31AE7446300FC90AD /* not-select.png */,
+				63D306D41AE7446300FC90AD /* select.png */,
+				63D306D71AE744DF00FC90AD /* ns.png */,
+				63D306D81AE744DF00FC90AD /* s.png */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,6 +112,8 @@
 			children = (
 				636806C71ADFE50800E0411A /* AppDelegate.swift */,
 				636806CB1ADFE50800E0411A /* Main.storyboard */,
+				63D306D11AE63AFB00FC90AD /* TabBarIconTest.swift */,
+				63C1BD231AE6288600D91C04 /* KeychainViewController.swift */,
 				63C1BD211AE4D61D00D91C04 /* ModalAnimationViewController.swift */,
 				636806E71ADFE52C00E0411A /* TimeTableViewController.swift */,
 				63DE5A5C1AE257F0004350DB /* WeekTimeTableViewController.swift */,
@@ -205,11 +230,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63D306DA1AE744DF00FC90AD /* s.png in Resources */,
 				63DE5A591AE22B1C004350DB /* back.png in Resources */,
 				636806CD1ADFE50800E0411A /* Main.storyboard in Resources */,
+				63D306D91AE744DF00FC90AD /* ns.png in Resources */,
 				636806D21ADFE50800E0411A /* LaunchScreen.xib in Resources */,
+				63D306D61AE7446300FC90AD /* select.png in Resources */,
 				636806CF1ADFE50800E0411A /* Images.xcassets in Resources */,
 				63DE5A5B1AE22CF8004350DB /* back2.png in Resources */,
+				63D306D51AE7446300FC90AD /* not-select.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,7 +256,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63C1BD241AE6288600D91C04 /* KeychainViewController.swift in Sources */,
+				63C1BD2C1AE62B5A00D91C04 /* KeychainAccess.swift in Sources */,
 				636806C81ADFE50800E0411A /* AppDelegate.swift in Sources */,
+				63D306D21AE63AFB00FC90AD /* TabBarIconTest.swift in Sources */,
 				63C1BD221AE4D61D00D91C04 /* ModalAnimationViewController.swift in Sources */,
 				63DE5A5D1AE257F0004350DB /* WeekTimeTableViewController.swift in Sources */,
 				636806E81ADFE52C00E0411A /* TimeTableViewController.swift in Sources */,
@@ -357,12 +389,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Lin Li-Ying (NFF58M6TTS)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = WeekTable/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -370,12 +405,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Lin Li-Ying (NFF58M6TTS)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = WeekTable/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Release;
 		};

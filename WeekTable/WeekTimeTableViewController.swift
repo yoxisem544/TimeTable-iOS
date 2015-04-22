@@ -202,7 +202,7 @@ class WeekTimeTableViewController: UIViewController {
         
         // saving courses to a array
         // must send button itself or it can't get the right view
-        self.courses.addObject([day, session, button])
+        self.courses.addObject([day, session, button, view])
         
         return view as UIView
     }
@@ -214,7 +214,18 @@ class WeekTimeTableViewController: UIViewController {
             if name[2].isEqual(sender) {
                 println(name)
                 println("\(name[0]) and \(name[1])")
-                performSegueWithIdentifier("showCourseDetail", sender: self)
+//                performSegueWithIdentifier("showCourseDetail", sender: self)
+                let view = name[3] as! UIView
+                var scale = CGAffineTransformMakeScale(1.5, 1.5)
+                UIView.animateWithDuration(0.5, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0.5, options: nil, animations: {
+                        view.transform = scale
+                    }, completion: nil)
+                
+                UIView.animateWithDuration(0.5, delay: 0.5, usingSpringWithDamping: 0.5, initialSpringVelocity: 0.5, options: nil, animations: {
+                        scale = CGAffineTransformMakeScale(1, 1)
+                        view.transform = scale
+                    }, completion: nil)
+                
                 break
             }
         }
