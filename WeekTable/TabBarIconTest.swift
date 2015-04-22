@@ -18,8 +18,8 @@ class TabBarIconTest: UITabBarController {
         var item0 = self.tabBar.items![0] as! UITabBarItem
         
         item0.title = "something"
-        item0.image = UIImage(named: "close")
-        item0.selectedImage = UIImage(named: "close")
+        item0.image = UIImage(named: "Timetable")
+        item0.selectedImage = UIImage(named: "Timetable")
         
         var item1 = self.tabBar.items![1] as! UITabBarItem
         item1.title = "another"
