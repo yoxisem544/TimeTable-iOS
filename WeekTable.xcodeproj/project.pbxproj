@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		630A0A731AE8CB3800415E28 /* UserSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630A0A721AE8CB3800415E28 /* UserSettingViewController.swift */; };
+		630A0A751AE8E09100415E28 /* profile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 630A0A741AE8E09100415E28 /* profile.jpg */; };
 		636806C81ADFE50800E0411A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636806C71ADFE50800E0411A /* AppDelegate.swift */; };
 		636806CD1ADFE50800E0411A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 636806CB1ADFE50800E0411A /* Main.storyboard */; };
 		636806CF1ADFE50800E0411A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 636806CE1ADFE50800E0411A /* Images.xcassets */; };
@@ -38,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		630A0A721AE8CB3800415E28 /* UserSettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSettingViewController.swift; sourceTree = "<group>"; };
+		630A0A741AE8E09100415E28 /* profile.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = profile.jpg; sourceTree = "<group>"; };
 		636806C21ADFE50800E0411A /* WeekTable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeekTable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		636806C61ADFE50800E0411A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		636806C71ADFE50800E0411A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -95,6 +99,7 @@
 				63D306D41AE7446300FC90AD /* select.png */,
 				63D306D71AE744DF00FC90AD /* ns.png */,
 				63D306D81AE744DF00FC90AD /* s.png */,
+				630A0A741AE8E09100415E28 /* profile.jpg */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,6 +117,7 @@
 			children = (
 				636806C71ADFE50800E0411A /* AppDelegate.swift */,
 				636806CB1ADFE50800E0411A /* Main.storyboard */,
+				630A0A721AE8CB3800415E28 /* UserSettingViewController.swift */,
 				63D306D11AE63AFB00FC90AD /* TabBarIconTest.swift */,
 				63C1BD231AE6288600D91C04 /* KeychainViewController.swift */,
 				63C1BD211AE4D61D00D91C04 /* ModalAnimationViewController.swift */,
@@ -233,6 +239,7 @@
 				63D306DA1AE744DF00FC90AD /* s.png in Resources */,
 				63DE5A591AE22B1C004350DB /* back.png in Resources */,
 				636806CD1ADFE50800E0411A /* Main.storyboard in Resources */,
+				630A0A751AE8E09100415E28 /* profile.jpg in Resources */,
 				63D306D91AE744DF00FC90AD /* ns.png in Resources */,
 				636806D21ADFE50800E0411A /* LaunchScreen.xib in Resources */,
 				63D306D61AE7446300FC90AD /* select.png in Resources */,
@@ -262,6 +269,7 @@
 				63D306D21AE63AFB00FC90AD /* TabBarIconTest.swift in Sources */,
 				63C1BD221AE4D61D00D91C04 /* ModalAnimationViewController.swift in Sources */,
 				63DE5A5D1AE257F0004350DB /* WeekTimeTableViewController.swift in Sources */,
+				630A0A731AE8CB3800415E28 /* UserSettingViewController.swift in Sources */,
 				636806E81ADFE52C00E0411A /* TimeTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

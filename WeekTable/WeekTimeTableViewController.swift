@@ -253,7 +253,7 @@ class WeekTimeTableViewController: UIViewController {
                         scale = CGAffineTransformMakeScale(1, 1)
                         view.transform = scale
                     }, completion: nil)
-                
+                performSegueWithIdentifier("showCourseDetail", sender: self)
                 break
             }
         }
