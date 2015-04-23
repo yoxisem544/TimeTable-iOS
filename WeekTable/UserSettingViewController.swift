@@ -22,8 +22,8 @@ class UserSettingViewController: UIViewController {
 
         println("load")
         // Do any additional setup after loading the view.
-        self.userProfilePictiureWidth = 200
-        self.userProfilePictiureHeight = 200
+        self.userProfilePictiureWidth = 150
+        self.userProfilePictiureHeight = 150
         
         self.userNameLabelHeight = 50
         self.userNameLabelWidth = self.view.frame.width
@@ -46,13 +46,16 @@ class UserSettingViewController: UIViewController {
     func sayhi(sender: AnyObject) {
         println("hi")
         var btn = sender as! UIButton
-        btn.alpha = 1.0
+        UIView.animateWithDuration(0.2, animations: {
+            btn.alpha = 1
+        })
     }
     
     func touchdown(sender: AnyObject) {
         println("down")
         var btn = sender as! UIButton
         btn.alpha = 0.5
+        
     }
     
     func touchcancel(sender: AnyObject) {
